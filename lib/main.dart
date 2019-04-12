@@ -7,12 +7,10 @@ void main() => runApp(new MyApp());
 
 Widget _widgetForRoute(String route) {
   switch (route) {
-    case 'route1':
-      return  MyHomePage(title: 'Flutter Demo Home Page1');
     case 'route2':
-      return  MyHomePage(title: 'Flutter Demo Home Page2');
+      return  MyHomePage(title: '爱淘测试页面');
     default:
-        return  MyHomePage(title: 'Flutter Demo Home Page2');
+        return  MyHomePage(title: '爱淘测试页面');
   
   }
 }
@@ -45,9 +43,9 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
   //获取到插件与原生的交互通道
-  static const toAndroidPlugin = const MethodChannel('com.litngzhe.toandroid/plugin');
+  static const toAndroidPlugin = const MethodChannel('com.tao.to_android/plugin');
 
-  static const fromAndroiPlugin = const EventChannel('com.litngzhe.toflutter/plugin');
+  static const fromAndroiPlugin = const EventChannel('com.tao.to_flutter/plugin');
 
 
   StreamSubscription _fromAndroiSub;
@@ -159,7 +157,7 @@ void _onfromAndroiEvent(Object event) {
               , new Padding(
                 padding: const EdgeInsets.only(
                     left: 10.0, top: 10.0, right: 10.0),
-                child: new Text('Flutter 新加 点击次数$_counter'),
+                child: new Text('Flutter 尕尕 点击次数$_counter'),
               ) 
 
             ],
