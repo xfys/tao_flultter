@@ -79,3 +79,4 @@ flutter:
   module:
     androidPackage: com.inner.lovetao
     iosBundleIdentifier: com.inner.lovetao
+flutter_boost: ^0.0.411
